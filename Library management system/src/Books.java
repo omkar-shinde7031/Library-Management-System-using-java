@@ -30,5 +30,9 @@ public class Books {
     public boolean isAvaliable(){
         return !isBorrowed;
     }
+    
+    public String getTitle(){
+        return title;
+    }
 
 }
