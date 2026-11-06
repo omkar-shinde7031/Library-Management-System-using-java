@@ -17,7 +17,7 @@ public class Books {
             System.out.println("soory, this book is already borrowed");
         }
     }
-    
+
     public void returnBook(){
         if(isBorrowed){
             isBorrowed = false;
@@ -25,6 +25,10 @@ public class Books {
         }else{
             System.out.println("this book is wasn't borroowed");
         }
+    }
+
+    public boolean isAvaliable(){
+        return !isBorrowed;
     }
 
 }
