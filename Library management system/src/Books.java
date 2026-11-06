@@ -30,9 +30,22 @@ public class Books {
     public boolean isAvaliable(){
         return !isBorrowed;
     }
-    
+
     public String getTitle(){
         return title;
     }
+
+    public String getAuthor(){
+        return author;
+    }
+
+    public boolean isBorrowed(){
+        return isBorrowed;
+    }
+
+    public void displayDetails(){
+        System.out.println("Title: " + title+ ",author: "+ author);
+    }
+
 
 }
