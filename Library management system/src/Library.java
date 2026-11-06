@@ -17,5 +17,18 @@ public class Library{
             }
         }
     }
+    public void   borrowBook(String title,String author){
+        for(Books book : books){
+            if(book.getTitle().equalsIgnoreCase(title)&& book.getAuthor().equalsIgnoreCase(author)&& book.isAvaliable()){
+                book.borrowBook();
+                System.out.println("you have successfully borrowed'" + title + "' by"+author +".");
+            }else{
+                System.out.println("soory, '" + title + "'by" + author + "is already borrowed.");
+            }
+            return;
+        }
+        System.out.println("soory, the book is not avalable!");
+    }
+    
 
 }
