@@ -29,6 +29,10 @@ public class LibraryManagementSystem {
                 System.out.println("exiting the system. goodbye! ");
                 break;
             }
+            else{
+                System.out.println("Invalid option enter 'borrrow','return',or'exit'.");
+                
+            }
         }
     }
     }
