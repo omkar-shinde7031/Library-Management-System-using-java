@@ -29,6 +29,16 @@ public class Library{
         }
         System.out.println("soory, the book is not avalable!");
     }
-    
+    public void returnBook(String title, String author){
+        for(Books book : books){
+            if(book.getTitle().equalsIgnoreCase(title)&&book.getAuthor().equalsIgnoreCase(author)&& book.isBorrowed()){
+                if(!book.isAvaliable()){
+                    book.returnBook();
+                    System.out.println("you have successfully returned '" + title + "'by" + author + ".");
+                }
+                return;
+            }
+        }
+    }
 
 }
