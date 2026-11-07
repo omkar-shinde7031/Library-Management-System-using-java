@@ -16,6 +16,14 @@ public class LibraryManagementSystem {
             System.out.println("\nDo you want to borrow or return a book?");
             System.out.println("they 'borro' to borrow a book 'return' to return a book, or 'exit' to quit");
             String action = scanner.nextLine().toLowerCase();
+
+            if(action.equalsIgnoreCase("Borrow")){
+                System.out.print("Enter the title of the book you want to borrow: ");
+                String borrowTitle = scanner.nextLine();
+                System.out.print("enter the author of the book you want to boeeow: ");
+                String borrowAuthor = scanner.nextLine();
+                library.borrowBook(borrowTitle, borrowAuthor);
+            }
         }
     }
     }
