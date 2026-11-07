@@ -22,7 +22,12 @@ public class LibraryManagementSystem {
                 String borrowTitle = scanner.nextLine();
                 System.out.print("enter the author of the book you want to boeeow: ");
                 String borrowAuthor = scanner.nextLine();
+
                 library.borrowBook(borrowTitle, borrowAuthor);
+            }
+            else if(action.equalsIgnoreCase("exit")){
+                System.out.println("exiting the system. goodbye! ");
+                break;
             }
         }
     }
