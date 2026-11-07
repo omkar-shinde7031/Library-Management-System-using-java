@@ -8,7 +8,11 @@ public class LibraryManagementSystem {
         library.addBook(new Books("vertiy","colleen Hoovr"));
         library.addBook(new Books("the secret","Rohan Byrne"));
         library.addBook(new Books("grit","angela dunkark"));
-        
+
+        while(true){
+            System.out.println("\nAvaliable Book: ");
+            library.displayAvailableBooks();
+        }
     }
     }
 
