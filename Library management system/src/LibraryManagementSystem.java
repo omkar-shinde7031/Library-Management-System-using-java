@@ -31,8 +31,9 @@ public class LibraryManagementSystem {
             }
             else{
                 System.out.println("Invalid option enter 'borrrow','return',or'exit'.");
-                
+
             }
+            scanner.close();
         }
     }
     }
