@@ -12,6 +12,10 @@ public class LibraryManagementSystem {
         while(true){
             System.out.println("\nAvaliable Book: ");
             library.displayAvailableBooks();
+
+            System.out.println("\nDo you want to borrow or return a book?");
+            System.out.println("they 'borro' to borrow a book 'return' to return a book, or 'exit' to quit");
+            String action = scanner.nextLine().toLowerCase();
         }
     }
     }
